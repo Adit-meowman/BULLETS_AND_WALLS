@@ -29,7 +29,7 @@ function draw(){
   background("black");
 
   if(hasCollided(bullet, wall)){
-    bullet.velocity = 0;
+    bullet.velocityX = 0;
     var damage = 0.5 * weight * speed * speed/(thickness*thickness*thickness);
 
     if(damage>10){
